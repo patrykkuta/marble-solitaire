@@ -1,6 +1,4 @@
-#ifndef BOARD_CONFIGURATION_H
-#define BOARD_CONFIGURATION_H
-
+#pragma once
 class BOARD_CONFIGURATION {
 public:
 	static int DIAMOND[7][7];
@@ -9,5 +7,3 @@ public:
 	static int PLUS[7][7];
 	static int TRIANGLE[7][7];
 };
-
-#endif // BOARD_CONFIGURATION_H
