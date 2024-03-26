@@ -65,5 +65,23 @@ Move Game::getHint() {
 	return move;
 }
 bool Game::hasWon() {
+    bool alreadyPresent = false;
+    bool isMiddle = false;
+
+    for (int i = 0; i < 7; i++) {
+        for (int j = 0; j < 7; j++) {
+            if (board[i][j] == 1) {
+                if (alreadyPresent) return false;
+                alreadyPresent = true;
+
+                isMiddle = (i == 3 && j == 3);
+            }
+            
+        }
+    }
+
+    if ((difficulty == DIFFICULTY::EASY) || (difficulty == DIFFICULTY::HARD && isMiddle)) return true;
+    else return false;
+}
 	return false;
 }
