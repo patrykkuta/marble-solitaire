@@ -16,7 +16,7 @@ private:
 	bool isMoveValid(int originY, int originX, int destinationY, int destinationX);
 public:
 	Game(int(&configuration)[7][7], DIFFICULTY difficulty);
-	auto getBoard() -> int(*)[7];
+	std::vector<std::vector<int>>* getBoard();
 	std::stack<Move>* getRecentMoves();
 	unsigned int* getMovesCounter();
 	bool performMove(Move move);
