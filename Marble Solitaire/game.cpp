@@ -100,5 +100,27 @@ bool Game::hasFinished() {
 
     return true;
 }
+
+bool Game::isMoveValid(int originY, int originX, int destinationY, int destinationX) {
+    /**
+    Check if the move is valid
+    - distance equal to abs(2)
+    - move only horizontally and vertically, not diagonally
+    */
+    int dY = destinationY - originY;
+    int dX = destinationX - originX;
+    if ((dX != 0 && dY != 0) || (dX != 0 && abs(dX) != 2) || (dY != 0 && abs(dY) != 2)) {
 	return false;
+    }
+
+    // Check if there's a marble at the origin and an empty space at the destination
+    // 1 - piece, 0 - space, -1 - wall
+    int originValue = board[originY][originX];
+    int middleValue = board[originY + dY / 2][originX + dX / 2];
+    int destinationValue = board[destinationY][destinationX];
+    if (originValue != 1 || middleValue != 1 || destinationValue != 0) {
+        return false;
+}
+
+    return true;
 }
