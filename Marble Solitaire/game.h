@@ -19,7 +19,7 @@ public:
 	auto getBoard() -> int(*)[7];
 	std::stack<Move>* getRecentMoves();
 	unsigned int* getMovesCounter();
-	bool move(Move move);
+	bool performMove(Move move);
 	void undoMove();
 	std::queue<Move> solve();
 	Move getHint();
