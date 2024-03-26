@@ -24,6 +24,7 @@ public:
 	std::queue<Move> solve();
 	Move getHint();
 	bool hasWon();
+	bool hasFinished();
 	void setDifficulty(DIFFICULTY difficulty);
 };
 
