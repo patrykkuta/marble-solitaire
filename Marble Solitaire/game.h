@@ -1,13 +1,14 @@
 #pragma once
 #include <stack>
 #include <queue>
+#include <vector>
 #include "board_configuration.h"
 #include "difficulty.h"
 #include "move.h"
 
 class Game {
 private:
-	int board[7][7];
+	std::vector<std::vector<int>> board;
 	std::stack<Move> recentMoves;
 	unsigned int movesCounter = 0;
 	unsigned int difficulty;

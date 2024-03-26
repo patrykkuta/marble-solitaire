@@ -1,7 +1,10 @@
 #include "game.h"
 #include <iostream>
 
-Game::Game(int(&configuration)[7][7], DIFFICULTY difficulty) {
+Game::Game(const std::vector<std::vector<int>>& configuration, DIFFICULTY difficulty) {
+    // Initialize the board as a 2D vector of size 7x7
+    board.resize(7, std::vector<int>(7));
+
 	for (int i = 0; i < 7; i++) {
 		for (int j = 0; j < 7; j++) {
 			this->board[i][j] = configuration[i][j];
