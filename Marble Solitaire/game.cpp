@@ -8,12 +8,8 @@ Game::Game(const std::vector<std::vector<int>>& configuration, DIFFICULTY diffic
 	for (int i = 0; i < 7; i++) {
 		for (int j = 0; j < 7; j++) {
 			this->board[i][j] = configuration[i][j];
-			std::cout << board[i][j] << " ";
 		}
-
-		std::cout << std::endl;
 	}
-	std::cout << std::endl;
 
 	this->difficulty = difficulty;
 }
