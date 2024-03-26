@@ -105,7 +105,7 @@ bool Game::isMoveValid(int originY, int originX, int destinationY, int destinati
     */
     int dY = destinationY - originY;
     int dX = destinationX - originX;
-    if ((dX != 0 && dY != 0) || (dX != 0 && abs(dX) != 2) || (dY != 0 && abs(dY) != 2)) {
+    if ((dX != 0 && dY != 0) || (dX != 0 && abs(dX) != 2) || (dY != 0 && abs(dY) != 2) || (dX == 0 && dY == 0)) {
 	return false;
     }
 
