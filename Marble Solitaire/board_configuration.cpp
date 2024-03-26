@@ -1,6 +1,6 @@
 #include "board_configuration.h"
 
-int BOARD_CONFIGURATION::DIAMOND[7][7] = {
+std::vector<std::vector<int>> BOARD_CONFIGURATION::DIAMOND = {
 	{-1, -1, -1, 0, -1, -1, -1},
 	 {-1, -1, 0, 0, 0, -1, -1},
 	  {-1, 0, 0, 0, 0, 0, -1},
@@ -10,7 +10,7 @@ int BOARD_CONFIGURATION::DIAMOND[7][7] = {
 	{-1, -1, -1, 0, -1, -1, -1},
 };
 
-int BOARD_CONFIGURATION::FULL[7][7] = {
+std::vector<std::vector<int>> BOARD_CONFIGURATION::FULL = {
 	{-1, -1, 1, 1, 1, -1, -1},
 	{-1, -1, 1, 1, 1, -1, -1},
 	  {1, 1, 1, 1, 1, 1, 1},
@@ -20,7 +20,7 @@ int BOARD_CONFIGURATION::FULL[7][7] = {
 	{-1, -1, 1, 1, 1, -1, -1},
 };
 
-int BOARD_CONFIGURATION::PLUS[7][7] = {
+std::vector<std::vector<int>> BOARD_CONFIGURATION::PLUS = {
 	{-1, -1, -1, -1, -1, -1, -1},
 	{-1, -1, -1, 0, -1, -1, -1},
 	{-1, -1, -1, 0, -1, -1, -1},
@@ -30,7 +30,7 @@ int BOARD_CONFIGURATION::PLUS[7][7] = {
 	{-1, -1, -1, -1, -1, -1, -1},
 };
 
-int BOARD_CONFIGURATION::CROSS[7][7] = {
+std::vector<std::vector<int>> BOARD_CONFIGURATION::CROSS = {
 	{-1, -1, -1, -1, -1, -1, -1},
 	{-1, -1, -1, 0, -1, -1, -1},
 	 {-1, -1, 0, 0, 0, -1, -1},
@@ -40,7 +40,7 @@ int BOARD_CONFIGURATION::CROSS[7][7] = {
 	{-1, -1, -1, -1, -1, -1, -1},
 };
 
-int BOARD_CONFIGURATION::TRIANGLE[7][7] = {
+std::vector<std::vector<int>>  BOARD_CONFIGURATION::TRIANGLE = {
 	{-1, -1, -1, -1, -1, -1, -1},
 	{-1, -1, -1, 0, -1, -1, -1},
 	 {-1, -1, 0, 0, 0, -1, -1},
