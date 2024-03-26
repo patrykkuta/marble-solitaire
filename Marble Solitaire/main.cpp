@@ -9,7 +9,6 @@ int main() {
 
 	GameController gcontroller;
 	Game* game = gcontroller.newGame(BOARD_CONFIGURATION::CROSS, DIFFICULTY::EASY);
-
 	while (!game->hasFinished()) {
 		std::vector<std::vector<int>> gameBoard = *game->getBoard();
 

@@ -116,7 +116,7 @@ bool Game::isMoveValid(int originY, int originX, int destinationY, int destinati
     int destinationValue = board[destinationY][destinationX];
     if (originValue != 1 || middleValue != 1 || destinationValue != 0) {
         return false;
-}
+    }
 
     return true;
 }
