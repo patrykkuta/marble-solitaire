@@ -83,5 +83,22 @@ bool Game::hasWon() {
     if ((difficulty == DIFFICULTY::EASY) || (difficulty == DIFFICULTY::HARD && isMiddle)) return true;
     else return false;
 }
+
+bool Game::hasFinished() {
+    for (int i = 0; i < 7; i++) {
+        for (int j = 0; j < 7; j++) {
+            if (board[i][j] == 1) {
+                if ((i + 2 < 7 && board[i + 1][j] == 1 && board[i + 2][j] == 0) ||
+                    (i - 2 >= 0 && board[i - 1][j] == 1 && board[i - 2][j] == 0) ||
+                    (j + 2 < 7 && board[i][j + 1] == 1 && board[i][j + 2] == 0) ||
+                    (j - 2 >= 0 && board[i][j - 1] == 1 && board[i][j - 2] == 0)) {
+                    return false;  // A move is possible, game not finished
+                }
+            }
+        }
+    }
+
+    return true;
+}
 	return false;
 }
