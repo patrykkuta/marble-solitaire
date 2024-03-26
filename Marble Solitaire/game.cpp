@@ -17,8 +17,8 @@ Game::Game(const std::vector<std::vector<int>>& configuration, DIFFICULTY diffic
 
 	this->difficulty = difficulty;
 }
-auto Game::getBoard() -> int(*)[7] {
-	return board;
+std::vector<std::vector<int>>* Game::getBoard() {
+	return &board;
 }
 std::stack<Move>* Game::getRecentMoves() {
 	return &recentMoves;
