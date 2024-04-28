@@ -5,7 +5,11 @@ uniform	mat4	mv_matrix;
 uniform	mat4	proj_matrix;
 layout (binding=0) uniform sampler2D samp;
 
+uniform int isRenderedOnScreen;
+uniform int x, y;
+
 void main(void)
 { 
-	color = texture(samp, tc);
+	if (isRenderedOnScreen == 1) color = texture(samp, tc);
+	else color = vec4(x/255.0, y/255.0, 0.0, 0.0);
 }
