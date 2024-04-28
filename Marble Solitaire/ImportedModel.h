@@ -1,17 +1,22 @@
 #pragma once
 #include <vector>
+#include <glm/glm.hpp>
+
+using namespace std;
 
 class ImportedModel
 {
 private:
 	int numVertices;
-	std::vector<glm::vec3> vertices;
-	std::vector<glm::vec2> texCoords;
-	std::vector<glm::vec3> normalVecs;
+	vector<glm::vec3> vertices;
+	vector<glm::vec2> texCoords;
+	vector<glm::vec3> normalVecs;
+
 public:
 	ImportedModel(const char* filePath);
 	int getNumVertices();
-	std::vector<glm::vec3> getVertices();
-	std::vector<glm::vec2> getTextureCoords();
-	std::vector<glm::vec3> getNormals();
+	vector<glm::vec3> getVertices();
+	vector<glm::vec2> getTextureCoords();
+	vector<glm::vec3> getNormals();
+
 };
