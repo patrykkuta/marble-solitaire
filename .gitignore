@@ -6,6 +6,7 @@ Marble Solitaire/
 *.aps
 *.exe
 *.dll
+*.pdb
 ./x64/
 *(*).sln
 *(*).vcxproj
