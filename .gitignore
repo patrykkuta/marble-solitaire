@@ -6,6 +6,10 @@ Marble Solitaire/
 *.aps
 *.exe
 *.dll
-x64/
+./x64/
 *(*).sln
 *(*).vcxproj
+
+!ikpMP3.dll
+!irrKlang.dll
+!libs/glew-2.1.0/lib/Release/x64/glew32s.lib
