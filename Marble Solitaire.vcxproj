@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="headers\board_configuration.h" />
+    <ClInclude Include="headers\Camera.h" />
+    <ClInclude Include="headers\difficulty.h" />
+    <ClInclude Include="headers\EndGameScreen.h" />
+    <ClInclude Include="headers\Framebuffer.h" />
+    <ClInclude Include="headers\game.h" />
+    <ClInclude Include="headers\GameController.h" />
+    <ClInclude Include="headers\GameObject.h" />
+    <ClInclude Include="headers\GameScreen.h" />
+    <ClInclude Include="headers\ImportedModel.h" />
+    <ClInclude Include="headers\ModelImporter.h" />
+    <ClInclude Include="headers\move.h" />
+    <ClInclude Include="headers\Screen.h" />
+    <ClInclude Include="headers\ScreenManager.h" />
+    <ClInclude Include="headers\ScreenType.h" />
+    <ClInclude Include="headers\Shader.h" />
+    <ClInclude Include="headers\SoundManager.h" />
+    <ClInclude Include="headers\StartScreen.h" />
+    <ClInclude Include="headers\Texture.h" />
+    <ClInclude Include="headers\Utils.h" />
+    <ClInclude Include="headers\Window.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shaders\boardFragment.glsl" />
+    <None Include="shaders\boardVertex.glsl" />
+    <None Include="shaders\imageFragment.glsl" />
+    <None Include="shaders\imageVertex.glsl" />
+    <None Include="shaders\marbleFragment.glsl" />
+    <None Include="shaders\marbleVertex.glsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\board_configuration.cpp" />
+    <ClCompile Include="source\Camera.cpp" />
+    <ClCompile Include="source\EndGameScreen.cpp" />
+    <ClCompile Include="source\Framebuffer.cpp" />
+    <ClCompile Include="source\game.cpp" />
+    <ClCompile Include="source\GameController.cpp" />
+    <ClCompile Include="source\GameObject.cpp" />
+    <ClCompile Include="source\GameScreen.cpp" />
+    <ClCompile Include="source\ImportedModel.cpp" />
+    <ClCompile Include="source\main.cpp" />
+    <ClCompile Include="source\ModelImporter.cpp" />
+    <ClCompile Include="source\move.cpp" />
+    <ClCompile Include="source\Screen.cpp" />
+    <ClCompile Include="source\ScreenManager.cpp" />
+    <ClCompile Include="source\Shader.cpp" />
+    <ClCompile Include="source\SoundManager.cpp" />
+    <ClCompile Include="source\StartScreen.cpp" />
+    <ClCompile Include="source\Texture.cpp" />
+    <ClCompile Include="source\Utils.cpp" />
+    <ClCompile Include="source\Window.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{887b4fd8-19d7-4462-9301-7aecedd88938}</ProjectGuid>
+    <RootNamespace>MarbleSolitaire</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>C:\Users\patry\iCloudDrive\University\Year 2\Courseworks\Computer Graphics with C++\Marble-Solitaire\Marble Solitaire\source;C:\Users\patry\iCloudDrive\University\Year 2\Courseworks\Computer Graphics with C++\Marble-Solitaire\Marble Solitaire\headers;C:\Users\patry\iCloudDrive\University\Year 2\Courseworks\Computer Graphics with C++\Marble-Solitaire\Marble Solitaire\lib\irrKlang-64bit-1.6.0\include;C:\Users\patry\iCloudDrive\University\Year 2\Courseworks\Computer Graphics with C++\Marble-Solitaire\Marble Solitaire\lib\SOIL2-master\SOIL2-master\src;C:\Users\patry\iCloudDrive\University\Year 2\Courseworks\Computer Graphics with C++\Marble-Solitaire\Marble Solitaire\lib\glm-master\glm-master;C:\Users\patry\iCloudDrive\University\Year 2\Courseworks\Computer Graphics with C++\Marble-Solitaire\Marble Solitaire\lib\glfw-3.3.8.bin.WIN64\glfw-3.3.8.bin.WIN64\include;C:\Users\patry\iCloudDrive\University\Year 2\Courseworks\Computer Graphics with C++\Marble-Solitaire\Marble Solitaire\lib\glew-2.1.0-win32\glew-2.1.0\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\patry\iCloudDrive\University\Year 2\Courseworks\Computer Graphics with C++\Marble-Solitaire\Marble Solitaire\lib\irrKlang-64bit-1.6.0\lib\Winx64-visualStudio;C:\Users\patry\iCloudDrive\University\Year 2\Courseworks\Computer Graphics with C++\Marble-Solitaire\Marble Solitaire\lib\SOIL2-master\SOIL2-master\lib\windows;C:\Users\patry\iCloudDrive\University\Year 2\Courseworks\Computer Graphics with C++\Marble-Solitaire\Marble Solitaire\lib\glm-master\glm-master;C:\Users\patry\iCloudDrive\University\Year 2\Courseworks\Computer Graphics with C++\Marble-Solitaire\Marble Solitaire\lib\glfw-3.3.8.bin.WIN64\glfw-3.3.8.bin.WIN64\lib-vc2022;C:\Users\patry\iCloudDrive\University\Year 2\Courseworks\Computer Graphics with C++\Marble-Solitaire\Marble Solitaire\lib\glew-2.1.0-win32\glew-2.1.0\lib\Release\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>C:\Users\patry\iCloudDrive\University\Year 2\Courseworks\Computer Graphics with C++\Marble-Solitaire\Marble Solitaire\source;C:\Users\patry\iCloudDrive\University\Year 2\Courseworks\Computer Graphics with C++\Marble-Solitaire\Marble Solitaire\headers;C:\Users\patry\iCloudDrive\University\Year 2\Courseworks\Computer Graphics with C++\Marble-Solitaire\Marble Solitaire\lib\SOIL2-master\SOIL2-master\src;C:\Users\patry\iCloudDrive\University\Year 2\Courseworks\Computer Graphics with C++\Marble-Solitaire\Marble Solitaire\lib\irrKlang-64bit-1.6.0\include;C:\Users\patry\iCloudDrive\University\Year 2\Courseworks\Computer Graphics with C++\Marble-Solitaire\Marble Solitaire\lib\glm-master\glm-master;C:\Users\patry\iCloudDrive\University\Year 2\Courseworks\Computer Graphics with C++\Marble-Solitaire\Marble Solitaire\lib\glfw-3.3.8.bin.WIN64\glfw-3.3.8.bin.WIN64\include;C:\Users\patry\iCloudDrive\University\Year 2\Courseworks\Computer Graphics with C++\Marble-Solitaire\Marble Solitaire\lib\glew-2.1.0-win32\glew-2.1.0\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\patry\iCloudDrive\University\Year 2\Courseworks\Computer Graphics with C++\Marble-Solitaire\Marble Solitaire\lib\SOIL2-master\SOIL2-master\lib\windows;C:\Users\patry\iCloudDrive\University\Year 2\Courseworks\Computer Graphics with C++\Marble-Solitaire\Marble Solitaire\lib\irrKlang-64bit-1.6.0\lib\Winx64-visualStudio;C:\Users\patry\iCloudDrive\University\Year 2\Courseworks\Computer Graphics with C++\Marble-Solitaire\Marble Solitaire\lib\glm-master\glm-master;C:\Users\patry\iCloudDrive\University\Year 2\Courseworks\Computer Graphics with C++\Marble-Solitaire\Marble Solitaire\lib\glfw-3.3.8.bin.WIN64\glfw-3.3.8.bin.WIN64\lib-vc2022;C:\Users\patry\iCloudDrive\University\Year 2\Courseworks\Computer Graphics with C++\Marble-Solitaire\Marble Solitaire\lib\glew-2.1.0-win32\glew-2.1.0\lib\Release\x64;$(LibraryPath)</LibraryPath>
+    <TargetExt>.exe</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg">
+    <VcpkgEnableManifest>true</VcpkgEnableManifest>
+    <VcpkgEnabled>false</VcpkgEnabled>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>GLEW_STATIC;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>libs\SOIL2\src;libs\glm;libs\glfw-3.3.8\include;libs\glew-2.1.0\include;libs\irrKlang\include;headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;glew32s.lib;glfw3.lib;soil2-debug.lib;irrKlang.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+      <AdditionalLibraryDirectories>libs\SOIL2\lib\windows;libs\glfw-3.3.8\lib-vc2022;libs\glew-2.1.0\lib\Release\x64;libs\glm;libs\irrKlang\lib\Winx64-visualStudio;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>GLEW_STATIC;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;glew32s.lib;glfw3.lib;soil2-debug.lib;irrKlang.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
