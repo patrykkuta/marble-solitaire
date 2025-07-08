@@ -18,6 +18,9 @@
   <a href="https://www.glfw.org/">
     <img src="https://img.shields.io/badge/GLFW-3.3.8-lightgrey.svg" alt="GLFW" />
   </a>
+  <a href="https://github.com/SpartanJ/SOIL2">
+    <img src="https://img.shields.io/badge/SOIL2-1.3.0-red.svg" alt="SOIL2" />
+  </a>
   <a href="https://www.ambiera.com/irrklang/">
     <img src="https://img.shields.io/badge/irrKlang-latest-purple.svg" alt="irrKlang" />
   </a>
@@ -97,7 +100,7 @@ This project showcases:
 # 🛠️ Tech Stack
 
 - **Language:** C++  
-- **Graphics:** OpenGL, GLEW, GLFW, GLM  
+- **Graphics:** OpenGL, GLEW, GLFW, GLM, SOIL2  
 - **Audio:** irrKlang  
 - **Modeling:** Blender (.obj assets)  
 - **Build:** Visual Studio solution (`.sln`)  
