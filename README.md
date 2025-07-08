@@ -41,11 +41,11 @@
 
 - [YouTube Demo](#-youtube-demo)
 - [About](#-about)  
-- [Features](#-features)  
+- [Features](#️-features)  
 - [Limitations](#-limitations)  
-- [Tech Stack](#-tech-stack)  
+- [Tech Stack](#️-tech-stack)  
 - [Installation](#-installation)  
-- [Usage](#-usage)  
+- [How to Play](#-how-to-play)  
 - [Contributing](#-contributing)  
 - [License](#-license)  
 
