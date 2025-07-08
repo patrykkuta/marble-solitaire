@@ -39,15 +39,15 @@
 
 # 📋 Table of Contents
 
-- [YouTube Demo](#youtube-demo)
-- [About](#about)  
-- [Features](#features)  
-- [Limitations](#limitations)  
-- [Tech Stack](#tech-stack)  
-- [Installation](#installation)  
-- [Usage](#usage)  
-- [Contributing](#contributing)  
-- [License](#license)  
+- [YouTube Demo](#-youtube-demo)
+- [About](#-about)  
+- [Features](#-features)  
+- [Limitations](#-limitations)  
+- [Tech Stack](#-tech-stack)  
+- [Installation](#-installation)  
+- [Usage](#-usage)  
+- [Contributing](#-contributing)  
+- [License](#-license)  
 
 <br/>
 
